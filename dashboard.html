@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sample page</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+<style>
+*{
+    margin: 0px;
+    padding: 0px;
+    text-transform: capitalize;
+}
+#container{
+    display: flex;
+    position: relative;
+}
+/* nav division */
+#nav{
+   margin-left: 70px;
+   margin-top: 20px;
+    border: 1px solid lightgray;
+    width: 80px;
+    height: 600px;
+    box-shadow:  20px 20px 20px  rgba(0,0,0,0.3);
+    z-index: 1;
+}
+
+#logo{
+    padding: 20px; 
+    border-bottom: lightgray 1px solid;
+}
+#list{
+    list-style: none;
+   
+}
+li{
+    padding: 20px;
+    /* border-bottom: lightgray 1px solid; */
+cursor: pointer;
+
+
+}
+li:hover{
+    background-color:#52d8f0;
+    border-left:#199ef1  3px solid;
+}
+/* content division */
+
+#main-content{
+    margin-top: 80px;  
+    height:520px;
+    width: 100%;
+padding-left: 20px;
+padding-top: 20px;
+margin-right: 50px;
+    background-color: lightgrey;
+}
+input{
+    border: none;
+  
+}
+#upload{
+    padding: 20px;
+    width: 100px;
+    height:100px;
+ 
+}
+#upload::placeholder{
+    color: black;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+  
+}
+#url{
+    border-radius: 5px;
+    width: 90%;
+    padding: 10px;
+}
+#sub-content{
+    padding:40px 100px ;
+}
+h4{
+    text-align: center;
+    padding: 20px;
+}
+h3{
+    color:#6ba1c2;
+   
+}
+h3 i{
+    margin-right: 10px;
+}
+
+i{
+    padding-left: 10px;
+   display: block;
+
+}
+a{
+  color: gray;
+ 
+}
+a:hover{
+    color: black;
+}
+</style>
+<body>
+    <div id="container">
+        <!-- nav division -->
+   <div id="nav">
+       <div id="logo"><i class="fas fa-blog fa-lg"></i></div>
+       <ul id="list">
+           <li><a><i class="far fa-user fa-lg"></i>student</a></li>
+            <li><a> <i class="fas fa-book fa-lg"></i>lesson plan</a></li>
+                <li><a><i class="fas fa-cog fa-lg "></i>setting</a></li>
+       </ul>
+
+   </div>
+   <!-- content division -->
+   <div id="main-content">
+<h3><i class="fas fa-caret-left"></i>video</h3>
+<div id="sub-content">
+<input type="url"placeholder="insert url" id="url">
+<h4>or</h4>
+<input type="url"placeholder="upload" id="upload">
+</div>
+   </div>
+</div>
+</body>
+</html>
